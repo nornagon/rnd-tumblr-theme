@@ -329,7 +329,7 @@
             padding-bottom: 30px;
             width: 319px;
         }
-            #sidebar h3 {
+            #sidebar h3, #intro-stickie h3 {
                 border-bottom: 1px dotted #ccc;
                 color: #999;
                 font-size: 14px;
@@ -459,6 +459,8 @@
     /* Bluebie's litle style tweak to make posts with paragraphs in them not look irregular */
     .post-content p:last-child { margin-bottom: 0; }
     #social a img { border: 0 none transparent; margin: 0; padding: 0; padding-right: 3px; }
+    #intro-stickie h3 { margin-bottom: 0; }
+    #intro-stickie h3 a { color: inherit; text-decoration: inherit; }
     
     {CustomCSS}
     </style>
@@ -496,26 +498,20 @@
             <div id="container">
                 <div id="content">
                 {block:IndexPage}
-                <div class="post post-type-text"
+                <div class="post post-type-text" id="intro-stickie"
                   {block:SearchPage}style="display: none"{/block:SearchPage}>
-                    <div class="post-meta">
-                      <div class="type"><a href="/joining">662</a></div>
-                      <div class="date">Get involved!</div><!-- .date -->
-                    </div>
+                    <h3><a href="/joining">Get involved</a></h3>
                     <div class="post-content">
-                      <h3><a href="/joining">Join us!</a></h3>
                       <p>Robots &amp; Dinosaurs is located at <a
                         href="http://maps.google.com.au/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Robots+and+Dinosaurs,+Rockdale&amp;sll=-33.927644,151.233772&amp;sspn=0.010095,0.017059&amp;ie=UTF8&amp;hq=Robots+and+Dinosaurs,&amp;hnear=Rockdale+New+South+Wales&amp;ll=-33.959201,151.138186&amp;spn=0.009824,0.017059&amp;z=16">662 Princes Hwy,
-                        Rockdale</a>. We're open most Fridays, Saturdays and Mondays, but you
+                        Rockdale</a>. We’re open most Fridays, Saturdays and Mondays, but you
                         should check by asking on our <a href="/mailing-list">mailing list</a>
                         or by calling the space on <a href="tel:+61-2-8033-2318">8033 2318</a>.
-                        Before visiting read our visitor information, including what the
+                        Before visiting read our <a href="/joining">visitor information</a>, including what the
                         space <a href="/joining#location">looks like</a>, getting here by
                         <a href="/joining#transport">public transport</a>, and info on
-                        <a href="/joining#membership">costs</a>.
-                      </p>
-                      <p>
-                        Once you're here, <a href="/resources/space">make stuff</a>!
+                        <a href="/joining#membership">costs</a>. And now, some stuff we’ve made
+                        recently and announcements of upcoming events:
                       </p>
                     </div>
                   </div>
