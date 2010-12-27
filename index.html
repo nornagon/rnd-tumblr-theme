@@ -588,6 +588,11 @@
                         {/block:HasTags}
                         </div><!-- post-content -->
                     </div><!-- .post -->
+                    {block:NoSearchResults}
+                    <div class="post">
+                      <em>No results were found for "{SearchQuery}"</em>
+                    </div>
+                    {/block:NoSearchResults}
                     {block:IfDisqusShortname}{block:Permalink}
                         <div id="disqus_thread"></div>
                         <script type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/embed.js"></script>
