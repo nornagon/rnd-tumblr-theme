@@ -452,6 +452,7 @@
             
     /* Bluebie's litle style tweak to make posts with paragraphs in them not look irregular */
     .post-content p:last-child { margin-bottom: 0; }
+    #social a img { border: 0 none transparent; margin: 0; padding: 0; padding-right: 3px; }
     
     {CustomCSS}
     </style>
@@ -606,6 +607,13 @@
                 <div id="about" class="widget">
                     <img src="{PortraitURL-64}" alt="portrait">
                     {block:Description}<div class="description"><p>{Description}</p></div>{/block:Description}
+                    <p id=social>
+                      <a href="http://facebook.com/robodinos"><img src="{image:Facebook Button}" width=32 title="Facebook Place"></a>
+                      <a href="http://twitter.com/robodinos"><img src="{image:Twitter Button}" width=32 title="Twitter Presence"></a>
+                      <a href="http://flickr.com/groups/robotsanddinosaurs/"><img src="{image:Flickr Button}" width=32 title="Flickr Group"></a>
+                      <a href="http://www.google.com/reader/view/#stream/feed%2Fhttp%3A%2F%2Frobodinos.tumblr.com%2Frss"><img src="{image:GReader Button}" width=32 twitter="Google Reader"></a>
+                      <a href="http://groups.google.com/group/sydney-hackspace"><img src="{image:MailingList Button}" width=32 title="Mailing List"></a>
+                    </p>
                 </div>
                 <h3>Contact</h3>
                 <div id="contact" class="widget">
