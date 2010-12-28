@@ -468,6 +468,12 @@
     #intro-stickie h3 a { color: inherit; text-decoration: inherit; }
     .post-type-text .post-content img { max-width: 500px; height: auto; }
     
+    /* Reverse Switches */
+    #intro-stickie {
+      {block:SearchPage} display: none; {/block:SearchPage}
+      {block:PreviousPage} display: none; {/block:PreviousPage}
+    }
+    
     {CustomCSS}
     </style>
 </head>
@@ -504,8 +510,7 @@
             <div id="container">
                 <div id="content">
                 {block:IndexPage}
-                <div class="post post-type-text" id="intro-stickie"
-                  {block:SearchPage}style="display: none"{/block:SearchPage}>
+                <div class="post post-type-text" id="intro-stickie">
                     <h3><a href="/joining">Get involved</a></h3>
                     <div class="post-content">
                       <p>Robots &amp; Dinosaurs is located at <a
