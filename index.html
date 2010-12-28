@@ -26,11 +26,11 @@
     <meta name="text:Number of Tweets" content="3">
     <meta name="text:Google Analytics ID" content="">
     <meta name="text:Disqus Shortname" content="">
+    <meta name="image:Small Icon" content="">
     <meta name="image:Facebook Button" content="">
     <meta name="image:Twitter Button" content="">
     <meta name="image:Flickr Button" content="">
     <meta name="image:Feed Button" content="">
-    <meta name="image:MailingList Button" content="">
     <meta name="image:GMaps Button" content="">
 
     <style type="text/css" media="screen">
@@ -147,7 +147,7 @@
         #container {
             border-right: 1px solid #ccc;
             float: left;
-            min-height: 550px;
+            min-height: 690px;
             width: 580px;
         }
             .post-meta {
@@ -376,12 +376,16 @@
             #about {
                 overflow: hidden;
             }
-                #about img {
+                #about img, #social img {
                     background: #fff;
                     border: 1px solid #ccc;
-                    float: left;
                     margin: 0 10px 0 0;
                     padding: 3px;
+                }
+                #about img.avatar {
+                    float: left;
+                    border: 0;
+                    padding: 0;
                 }
             .like_post {
                 border-bottom: 1px dotted #ccc;
@@ -459,7 +463,7 @@
     /* Bluebie's litle style tweak to make posts with paragraphs in them not look irregular */
     .post-content p:last-child { margin-bottom: 0; }
     #social a img { border: 0 none transparent; margin: 0; padding: 0; padding-right: 3px; }
-    #intro-stickie h3 { margin-bottom: 0; }
+    #intro-stickie h3 { margin-bottom: 0; border-bottom: 1px solid #ccc; }
     #intro-stickie h3 a { color: inherit; text-decoration: inherit; }
     
     {CustomCSS}
@@ -588,6 +592,11 @@
                         {/block:HasTags}
                         </div><!-- post-content -->
                     </div><!-- .post -->
+                    {block:NoSearchResults}
+                    <div class="post">
+                      <em>No results were found for "{SearchQuery}"</em>
+                    </div>
+                    {/block:NoSearchResults}
                     {block:IfDisqusShortname}{block:Permalink}
                         <div id="disqus_thread"></div>
                         <script type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/embed.js"></script>
@@ -607,16 +616,28 @@
             {block:IfShowAboutWidget}
                 <h3>{lang:About}</h3>
                 <div id="about" class="widget">
-                    <img src="{PortraitURL-64}" alt="portrait">
+                    <img class='avatar' src="{image:Small Icon}" alt="portrait">
                     {block:Description}<div class="description"><p>{Description}</p></div>{/block:Description}
-                    <p id=social>
-                      <a href="http://facebook.com/robodinos"><img src="{image:Facebook Button}" width=32 title="Facebook Place"></a>
-                      <a href="http://twitter.com/robodinos"><img src="{image:Twitter Button}" width=32 title="Twitter Presence"></a>
-                      <a href="http://flickr.com/groups/robotsanddinosaurs/"><img src="{image:Flickr Button}" width=32 title="Flickr Group"></a>
-                      <a href="/rss"><img src="{image:Feed Button}" width=32 twitter="Tumblog Feed"></a>
-                      <a href="http://groups.google.com/group/sydney-hackspace"><img src="{image:MailingList Button}" width=32 title="Mailing List"></a>
-                      <a href="http://maps.google.com.au/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Robots+and+Dinosaurs,+Rockdale&amp;sll=-33.927644,151.233772&amp;sspn=0.010095,0.017059&amp;ie=UTF8&amp;hq=Robots+and+Dinosaurs,&amp;hnear=Rockdale+New+South+Wales&amp;ll=-33.959201,151.138186&amp;spn=0.009824,0.017059&amp;z=16"><img src="{image:GMaps Button}" width=32 title="Google Maps"></a>
-                    </p>
+                </div>
+                <h3>Socialise</h3>
+                <div id="mailinglist" class='widget'>
+                  <p id=social>
+                    <a href="http://facebook.com/robodinos"><img src="{image:Facebook Button}" width=32 title="Facebook Place"></a>
+                    <a href="http://twitter.com/robodinos"><img src="{image:Twitter Button}" width=32 title="Twitter Presence"></a>
+                    <a href="http://flickr.com/groups/robotsanddinosaurs/"><img src="{image:Flickr Button}" width=32 title="Flickr Group"></a>
+                    <a href="/rss"><img src="{image:Feed Button}" width=32 twitter="Tumblog Feed"></a>
+                    <a href="http://maps.google.com.au/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Robots+and+Dinosaurs,+Rockdale&amp;sll=-33.927644,151.233772&amp;sspn=0.010095,0.017059&amp;ie=UTF8&amp;hq=Robots+and+Dinosaurs,&amp;hnear=Rockdale+New+South+Wales&amp;ll=-33.959201,151.138186&amp;spn=0.009824,0.017059&amp;z=16"><img src="{image:GMaps Button}" width=32 title="Google Maps"></a>
+                    <iframe src="http://foursquare.com/button.html?vid=9428056&color=light" allowtransparency="true" style="width:165px; height:25px;"></iframe>
+                  </p>
+                  <p>
+                    <form action="http://groups.google.com/group/sydney-hackspace/boxsubscribe">
+                  Subscribe to our <a
+                    href="http://groups.google.com/group/sydney-hackspace">mailing
+                    list</a>:<br/>
+                      <input type=email name=email placeholder="Email address">
+                      <input type=submit name="sub" value="Subscribe">
+                    </form>
+                  </p>
                 </div>
                 <h3>Contact</h3>
                 <div id="contact" class="widget">
