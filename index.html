@@ -472,6 +472,37 @@
       {block:PreviousPage} display: none; {/block:PreviousPage}
     }
     
+    /* Bluebie's Mailing List Subscribe form stylings */
+    #subscribe-form { margin-bottom: 8px; }
+    #subscribe-form div {
+      border-color: #CCC;
+      border-style: solid;
+      border-width: 1px;
+      padding: 2px;
+      overflow: hidden;
+    }
+    #subscribe-form div input#email-input {
+      display: block;
+      border-style: none;
+      font-size: 16px;
+      font-face: inherit;
+      outline: 0 none;
+      width: 190px;
+      float: left;
+    }
+    #subscribe-form div button {
+      border-style: none;
+      margin-top: -2px;
+      margin-bottom: -1px;
+      margin-right: -1px;
+      background-image: url("http://static.tumblr.com/9ftbtym/IJIle7jye/subscribebutton.png");
+      width: 80px;
+      height: 28px;
+      color: transparent;
+      float: right;
+      cursor: pointer;
+    }
+    
     {CustomCSS}
     </style>
 </head>
@@ -626,6 +657,13 @@
                 </div>
                 <h3>Socialise</h3>
                 <div id="mailinglist" class='widget'>
+                  <form id="subscribe-form" action="http://groups.google.com/group/sydney-hackspace/boxsubscribe">
+                    Subscribe to our <a href="/mailing-list">mailing list</a>:
+                    <div>
+                      <input type=email id="email-input" name=email placeholder="Email Address…">
+                      <button type=submit id="subscribe-button">Subscribe</button>
+                    </div>
+                  </form>
                   <p id="social">
                     <a href="http://facebook.com/robodinos" rel=me><img src="http://static.tumblr.com/9ftbtym/tiNle4z5x/icon_facebook_32.png" width=32 title="Facebook Place"></a>
                     <a href="http://twitter.com/robodinos" rel=me><img src="http://static.tumblr.com/9ftbtym/uBIle4z8z/icon_twitter_32.png" width=32 title="Twitter Presence"></a>
@@ -634,15 +672,6 @@
                     <a href="http://foursquare.com/venue/9428056" rel=me><img src="http://static.tumblr.com/9ftbtym/G2Nle520t/icon_foursquare_32.png" width=32 title="Foursquare"></a>
                     <a href="http://maps.google.com.au/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Robots+and+Dinosaurs,+Rockdale&amp;sll=-33.927644,151.233772&amp;sspn=0.010095,0.017059&amp;ie=UTF8&amp;hq=Robots+and+Dinosaurs,&amp;hnear=Rockdale+New+South+Wales&amp;ll=-33.959201,151.138186&amp;spn=0.009824,0.017059&amp;z=16" rel=me><img src="http://static.tumblr.com/9ftbtym/Qu8le4z8d/icon_gmaps_32.png" width=32 title="Google Maps"></a>
                     <iframe src="http://foursquare.com/button.html?vid=9428056&amp;color=light" allowtransparency="true" style="width:165px; height:25px;"></iframe>
-                  </p>
-                  <p>
-                    <form action="http://groups.google.com/group/sydney-hackspace/boxsubscribe">
-                  Subscribe to our <a
-                    href="http://groups.google.com/group/sydney-hackspace">mailing
-                    list</a>:<br/>
-                      <input type=email name=email placeholder="Email address">
-                      <input type=submit name=sub value="Subscribe">
-                    </form>
                   </p>
                 </div>
                 <h3>Contact</h3>
