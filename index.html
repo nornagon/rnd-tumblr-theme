@@ -475,49 +475,57 @@
     /* Bluebie's Mailing List Subscribe form stylings */
     #subscribe-form { margin-bottom: 8px; }
     #subscribe-form div {
-      border-color: #CCC;
-      border-style: solid;
-      border-width: 1px;
-      padding: 2px;
-      overflow: hidden;
+    	border: 1px solid #ccc;
+    	display: table; /* yes, this really is the right solution */
     }
     #subscribe-form div input#email-input {
-      display: block;
       border-style: none;
-      font-size: 16px;
       font-family: inherit;
       outline: 0 none;
-      width: 190px;
-      float: left;
-      padding: 0 0 0 0;
+      width: 180px;
+      padding: 4px;
+      line-height: 15px;
       -webkit-appearance: none;
     }
-    /*#subscribe-form div button {
-      border-style: none;
-      margin-top: -2px;
-      margin-bottom: -1px;
-      margin-right: -1px;
-      background-image: url("http://static.tumblr.com/9ftbtym/IJIle7jye/subscribebutton.png");
-      width: 80px;
-      height: 28px;
-      color: transparent;
-      float: right;
-      cursor: pointer;
-    }*/
     #subscribe-form div button {
-      border-style: none;
-      margin: -2px -2px -2px 0;
+    	line-height: 15px;
       width: 80px;
       height: 30px;
       font-family: inherit;
       font-size: 14px;
-      height: 28px;
-      float: right;
       cursor: pointer;
-      border-left: 1px solid #CCC;
+      border-left: 1px solid #ddd;
       color: #555;
-      background-color: #EEE;
+      background-color: #eee;
+      border: 0;
+			outline: 0 none;
+			border-left: 1px solid #ddd;
+			border-bottom: 1px solid #ddd;
+			border-top: 1px solid #fff;
+			text-shadow: 0px 1px white;
     }
+
+		#header div#search {
+			border: 1px solid #ccc;
+		}
+		#header #search input {
+			border: 0;
+			outline: 0 none;
+			-webkit-appearance: none;
+		}
+		#header #search input.search-button {
+			height: 30px;
+			border-left: 1px solid #ddd;
+			border-bottom: 1px solid #ddd;
+			border-top: 1px solid #fff;
+			text-shadow: 0px 1px white;
+			width: 65px;
+      cursor: pointer;
+			margin: 0;
+			padding: 0;
+      border-radius: 0;
+      color: #555;
+		}
     
     {CustomCSS}
     </style>
@@ -542,12 +550,12 @@
                             <li class="rss"><a href="{RSS}">{lang:RSS}</a></li>
                         </ul>
                     </div><!-- #pages -->
-                    <div id="search">
-                        <form action="/search" method="get">
-                            <input type="text" name="q" value="{SearchQuery}">
-                            <input type="submit" value="{lang:Search}" class="search-button">
-                        </form>
-                    </div><!-- #search -->
+										<form action="/search" method="get">
+											<div id="search">
+												<input type="text" name="q" value="{SearchQuery}">
+												<input type="submit" value="{lang:Search}" class="search-button">
+											</div><!-- #search -->
+										</form>
                 </div><!-- .menu -->
             </div><!-- #access -->
         </div><!-- #header -->
