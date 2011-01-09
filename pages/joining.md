@@ -7,7 +7,7 @@ Currently Robots and Dinosaurs is located at [662 Princes Hwy, Rockdale][gmaps].
 ![Photo of the house](http://media.tumblr.com/tumblr_ldvtwfoaQ21qzp1w3.jpg)
 [![Map](http://maps.google.com/maps/api/staticmap?center=-33.957368,151.140268&zoom=14&size=500x250&maptype=roadmap&markers=color:red|662%20Princes%20Hwy,%20Rockdale&sensor=false)][gmaps]
 
-Notably, to the right of the front step there's a model dinosaur glued down at about elbow height. Visiting should be done on open days, which at the time of writing are on Fridays, Saturdays, and Mondays at varying times. Check our [mailing list](/mailing-list) to confirm when the space will be open on any particular day, or phone the space on [8033 2318](tel:+61-2-8033-2318) before dropping in to see if anyone's around. If nobody at the space picks up, you can also call [our secretary](/board-members) at any sensible time.
+Notably, to the right of the front step there's a model dinosaur glued down at about elbow height. Visiting should be done on open days, which at the time of writing are on Fridays, Saturdays, and Mondays at varying times. Check our [mailing list](/mailing-list) to confirm when the space will be open on any particular day, or phone the space on [8033 2318](tel:+61-2-8033-2318) before dropping in to see if anyone's around. If nobody at the space picks up, you can also call [our secretary](/board-members) at any sensible time. Ensure you’re in Rockdale as house numbers reset along Princes Highway at the edge of each suburb.
 
 <h3 id="transport"> Public Transport Advice </h3>
 
@@ -26,4 +26,3 @@ As a paying member, you'll be able to visit on any open days without further exp
 If you have any questions, direct them to [our secretary](/board-members).
 
 [gmaps]: http://maps.google.com.au/maps?f=q&source=s_q&hl=en&geocode=&q=Robots+and+Dinosaurs,+Rockdale&sll=-33.927644,151.233772&sspn=0.010095,0.017059&ie=UTF8&hq=Robots+and+Dinosaurs,&hnear=Rockdale+New+South+Wales&ll=-33.959201,151.138186&spn=0.009824,0.017059&z=16 "Google Maps"
-
