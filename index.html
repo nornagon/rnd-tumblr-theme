@@ -32,23 +32,23 @@
     <meta name="text:Disqus Shortname" content="">
     <meta name="image:Small Icon" content="">
 
-		<script type="text/javascript">
-			function recordOutboundLink(link, category, action) {
-				try {
-					_gaq.push(['_trackEvent', category, action]);
-					setTimeout(function () { document.location = link.href }, 100)
-				}catch(err){}
-			}
-			function recordOutboundSubmit(form, category, action) {
-				try {
-					if (form.tracked) return true;
-					_gaq.push(['_trackEvent', category, action]);
-					form.tracked = true;
-					setTimeout(function () { form.submit() }, 100)
-				}catch(err){}
-			}
-		</script>
-		
+    <script type="text/javascript">
+      function recordOutboundLink(link, category, action) {
+        try {
+          _gaq.push(['_trackEvent', category, action]);
+          setTimeout(function () { document.location = link.href }, 100)
+        }catch(err){}
+      }
+      function recordOutboundSubmit(form, category, action) {
+        try {
+          if (form.tracked) return true;
+          _gaq.push(['_trackEvent', category, action]);
+          form.tracked = true;
+          setTimeout(function () { form.submit() }, 100)
+        }catch(err){}
+      }
+    </script>
+    
 
     <style type="text/css" media="screen">
     /* Minimal Theme designed by Artur Kim (http://arturkim.com) for Tumblr | version 1.5 */
@@ -496,8 +496,8 @@
     /* Bluebie's Mailing List Subscribe form stylings */
     #subscribe-form { margin-bottom: 8px; }
     #subscribe-form div {
-    	border: 1px solid #ccc;
-    	display: table; /* yes, this really is the right solution */
+      border: 1px solid #ccc;
+      display: table; /* yes, this really is the right solution */
     }
     #subscribe-form div input#email-input {
       border-style: none;
@@ -509,7 +509,7 @@
       -webkit-appearance: none;
     }
     #subscribe-form div button {
-    	line-height: 15px;
+      line-height: 15px;
       width: 80px;
       height: 30px;
       font-family: inherit;
@@ -519,34 +519,34 @@
       color: #555;
       background-color: #eee;
       border: 0;
-			outline: 0 none;
-			border-left: 1px solid #ddd;
-			border-bottom: 1px solid #ddd;
-			border-top: 1px solid #fff;
-			text-shadow: 0px 1px white;
+      outline: 0 none;
+      border-left: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      border-top: 1px solid #fff;
+      text-shadow: 0px 1px white;
     }
 
-		#header div#search {
-			border: 1px solid #ccc;
-		}
-		#header #search input {
-			border: 0;
-			outline: 0 none;
-			-webkit-appearance: none;
-		}
-		#header #search input.search-button {
-			height: 30px;
-			border-left: 1px solid #ddd;
-			border-bottom: 1px solid #ddd;
-			border-top: 1px solid #fff;
-			text-shadow: 0px 1px white;
-			width: 65px;
+    #header div#search {
+      border: 1px solid #ccc;
+    }
+    #header #search input {
+      border: 0;
+      outline: 0 none;
+      -webkit-appearance: none;
+    }
+    #header #search input.search-button {
+      height: 30px;
+      border-left: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      border-top: 1px solid #fff;
+      text-shadow: 0px 1px white;
+      width: 65px;
       cursor: pointer;
-			margin: 0;
-			padding: 0;
+      margin: 0;
+      padding: 0;
       border-radius: 0;
       color: #555;
-		}
+    }
     
     {CustomCSS}
     </style>
@@ -571,14 +571,14 @@
                             <li class="rss"><a href="{RSS}">{lang:RSS}</a></li>
                         </ul>
                     </div><!-- #pages -->
-										<form action="http://www.google.com/cse" method="get">
-											<div id="search">
-												<input type="hidden" name="cx" value="008120738068830572599:lcaaycfpeps" />
-												<input type="hidden" name="ie" value="UTF-8" />
-												<input type="text" name="q" value="{SearchQuery}">
-												<input type="submit" value="{lang:Search}" class="search-button">
-											</div><!-- #search -->
-										</form>
+                    <form action="http://www.google.com/cse" method="get">
+                      <div id="search">
+                        <input type="hidden" name="cx" value="008120738068830572599:lcaaycfpeps" />
+                        <input type="hidden" name="ie" value="UTF-8" />
+                        <input type="text" name="q" value="{SearchQuery}">
+                        <input type="submit" value="{lang:Search}" class="search-button">
+                      </div><!-- #search -->
+                    </form>
                 </div><!-- .menu -->
             </div><!-- #access -->
         </div><!-- #header -->
@@ -592,8 +592,7 @@
                       <p>Robots &amp; Dinosaurs is located at <a
                         href="http://maps.google.com.au/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Robots+and+Dinosaurs,+Rockdale&amp;sll=-33.927644,151.233772&amp;sspn=0.010095,0.017059&amp;ie=UTF8&amp;hq=Robots+and+Dinosaurs,&amp;hnear=Rockdale+New+South+Wales&amp;ll=-33.959201,151.138186&amp;spn=0.009824,0.017059&amp;z=16">662 Princes Hwy,
                         Rockdale</a>. We’re open most Fridays, Saturdays and Mondays, but you
-                        should check by asking on our <a href="/mailing-list" onclick='recordOutboundLink(this, "Mailing list",
-											"Visit group");return false;'>mailing list</a>
+                        should check by asking on our <a href="/mailing-list" onclick='recordOutboundLink(this, "Mailing list", "Visit group");return false;'>mailing list</a>
                         or by calling the space on <a href="tel:+61-2-8033-2318">8033 2318</a>.
                         Before visiting read our <a href="/joining">visitor information</a>, including what the
                         space <a href="/joining#location">looks like</a>, getting here by
@@ -707,12 +706,10 @@
                 <h3>Socialise</h3>
                 <div id="mailinglist" class='widget'>
                   <form id="subscribe-form"
-                  	action="http://groups.google.com/group/sydney-hackspace/boxsubscribe"
-                  	onsubmit='recordOutboundSubmit(this, "Mailing list",
-                  	"Subscribe directly"; return false;'>
+                    action="http://groups.google.com/group/sydney-hackspace/boxsubscribe"
+                    onsubmit='recordOutboundSubmit(this, "Mailing list", "Subscribe directly"; return false;'>
                     Subscribe to our <a href="/mailing-list"
-											onclick='recordOutboundLink(this, "Mailing list",
-											"Visit group");return false;' >mailing list</a>:
+                      onclick='recordOutboundLink(this, "Mailing list", "Visit group");return false;' >mailing list</a>:
                     <div>
                       <input type=email id="email-input" name=email placeholder="Email Address…">
                       <button type=submit id="subscribe-button">Subscribe</button>
@@ -731,8 +728,7 @@
                 <h3>Contact</h3>
                 <div id="contact" class="widget">
                   <div class="description"><p>
-                    Our <a href="/mailing-list" onclick='recordOutboundLink(this, "Mailing list",
-											"Visit group");return false;'>mailing list</a> is a great way
+                    Our <a href="/mailing-list" onclick='recordOutboundLink(this, "Mailing list", "Visit group");return false;'>mailing list</a> is a great way
                     to get in touch with us. If you need more immediate
                     contacts, email or call one of our <a
                       href="/board-members">board members</a>:
